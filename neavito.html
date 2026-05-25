@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Avito Clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <input type="text" id="searchInput" placeholder="Поиск товаров...">
+    </header>
+
+    <div class="filters">
+    <button data-cat="all">Все</button>
+    <button data-cat="electronics">Электроника</button>
+    <button data-cat="sport">Спорт</button>
+    <button data-cat="home">Дом</button>
+</div>
+
+    <main id="catalog" class="catalog-grid"></main>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImg" src="" alt="">
+            <h2 id="modalTitle"></h2>
+            <p id="modalPrice"></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
